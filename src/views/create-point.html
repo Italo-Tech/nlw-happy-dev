@@ -1,0 +1,139 @@
+{% extends "layout.html" %}
+
+{% set pageId = "page-create-point" %}
+
+{# Title #}
+{% block title %}
+    <title>Cria um ponto de coleta</title>
+{% endblock title %}
+
+{# Styles #}
+{% block styles %}
+    <link rel="stylesheet" type="text/css" href="./styles/create-point.css">
+{% endblock styles %}
+
+{# Content #}
+{% block content %}
+    <!-- Para não precisar modificar a mesma header em diversar páginas o nunjucks nos possibilita trabalhar com o include abaixo para modificar apenas em um arquivo e atualizar em todas as páginas que utilza o mesmo header -->
+    {% include "partials/page-header.html" %}
+
+    <form action="">
+        <h1>
+            Cadastro do ponto de coleta
+        </h1>
+
+        <!-- Coleção de campos -->
+        <fieldset>
+            <legend>
+                <h2>Dados da entidade</h2>
+            </legend>
+
+            <!-- Nome / imagem -->
+            <div class="field-group">
+                <div class="field">
+                    <label for="name">Nome da entidade</label>
+                    <input type="text" name="name" required="required">
+                </div>
+
+                <div class="field">
+                    <label for="name">Imagem da entidade</label>
+                    <input type="url" name="image" required="required" placeholder="http://">
+                </div>
+            </div>
+
+            <!-- Field group -->
+            <div class="field-group">
+
+                <!-- Endereço -->
+                <div class="field">
+                    <label for="address">Endereço</label>
+                    <input type="text" name="adress" required="required">
+                </div>
+                <!-- Número/Complemento -->
+                <div class="field">
+                    <label for="adress2">Número/Complemento</label>
+                    <input type="text" name="address2" required="required">
+                </div>
+            </div>
+
+            <div class="field-group">
+
+                <!-- Estado -->
+                <div class="field">
+                    <label for="state">Estado</label>
+                    <select name="uf" required="required">
+                        <option value="">Selecione o Estado</option>
+                    </select>
+
+                    <input type="hidden" name="state">
+                </div>
+
+                <!-- Cidade -->
+                <div class="field">
+                    <label for="city">Cidade</label>
+                    <select name="city" disabled="disabled" required="required">
+                        <option value="">Selecione a Cidade</option>
+                    </select>
+                </div>
+            </div>
+
+        </fieldset>
+
+        <!--Itens de coleta-->
+        <fieldset>
+            <legend>
+                <h2>Itens de Coleta</h2>
+                <span>Selecione um ou mais itens abaixo</span>
+            </legend>
+
+            <div class="items-grid">
+                <li data-id="1">
+                    <!--data-id atributo especial do html-->
+                    <img src="assets/lampadas.svg" alt="Lâmpadas">
+                    <span>Lâmpadas</span>
+                </li>
+
+                <li data-id="2">
+                    <!--data-id atributo especial do html-->
+                    <img src="assets/baterias.svg" alt="Pilhas e Baterias">
+                    <span>Pilhas e Baterias</span>
+                </li>
+
+                <li data-id="3">
+                    <!--data-id atributo especial do html-->
+                    <img src="assets/papeis-papelao.svg" alt="Papeis e Papelão">
+                    <span>Papeis e Papelão</span>
+                </li>
+
+                <li data-id="4">
+                    <!--data-id atributo especial do html-->
+                    <img src="assets/eletronicos.svg" alt="Resíduos Eletrônicos">
+                    <span>Resíduos Eletrônicos</span>
+                </li>
+
+                <li data-id="5">
+                    <!--data-id atributo especial do html-->
+                    <img src="assets/organicos.svg" alt="Resíduos Orgânicos">
+                    <span>Resíduos Orgânicos</span>
+                </li>
+
+                <li data-id="6">
+                    <!--data-id atributo especial do html-->
+                    <img src="assets/oleo.svg" alt="Óleo de Cozinha">
+                    <span>Óleo de Cozinha</span>
+                </li>
+            </div>
+
+            <input type="hidden" name="items">
+
+        </fieldset>
+
+        <button type="submit">Cadastrar ponto de coleta</button>
+
+    </form>
+{% endblock content %}
+
+{# Scripts #}
+{% block scripts %}
+    <script src="/scripts/create-point.js"></script>
+{% endblock scripts %}

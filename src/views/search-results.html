@@ -1,0 +1,56 @@
+{# Template engine - nunjucks #}
+{% extends "layout.html" %}
+
+{% set pageId = "page-search-results" %}
+
+{# Title #}
+{% block title %}
+    <title>Resultado da Pesquisa</title>
+{% endblock title %}
+
+{# Styles #}
+{% block styles %}
+    <link rel="stylesheet" type="text/css" href="./styles/search-results.css">
+{% endblock styles %}
+
+{# Content #}
+{% block content %}
+    {% include "partials/page-header.html" %}
+
+    <main>
+
+        <h4>
+            <strong>2 pontos</strong>
+            encontrados
+        </h4>
+
+        <div class="cards">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1528323273322-d81458248d40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1101&q=80" alt="Colectoria">
+                <h1>Colectoria</h1>
+                <h3>Resíduos Eletrônicos, Lampâdas</h3>
+                <p>
+                    Rio do Sul, Santa Catarina
+                    <br/>
+                    Guilherme Gaballa, Jardins
+                    <br/>
+                    Número 260
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1528323273322-d81458248d40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1101&q=80" alt="Colectoria">
+                <h1>Papersider</h1>
+                <h3>Papéis e Papelão</h3>
+                <p>
+                    Rio do Sul, Santa Catarina
+                    <br/>
+                    Guilherme Gaballa, Jardins
+                    <br/>
+                    Número 260
+                </p>
+            </div>
+        </div>
+
+    </main>
+{% endblock content %}
