@@ -14,8 +14,8 @@
 
 <p align="center">
   <img alt="Home page" src="./public/assets/Github/img1.jfif" width="100%">
-  <img alt="" src="./public/assets/Github/img2.jfif" width="50%">
-  <img alt="" src="./public/assets/Github/img3.jfif" width="50%">
+  <img alt="" src="./public/assets/Github/img2.jfif" width="40$">
+  <img alt="" src="./public/assets/Github/img3.jfif" width="40%">
 </p>
 
 ## 👨🏼‍💻 Desenvolvedor 
