@@ -33,7 +33,7 @@ server.get("/", (req, res) => {
 server.get("/create-point", (req, res) => {
 
     // req.query: Query Strings da nossa url 
-    // console.log(req.query)
+    console.log(req.query)
 
     return res.render("create-point.html")
 })

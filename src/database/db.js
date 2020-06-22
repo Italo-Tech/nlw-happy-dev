@@ -17,7 +17,7 @@ db.serialize(() => {
     //             id INTEGER PRIMARY KEY AUTOINCREMENT,
     //             image TEXT,
     //             name TEXT,
-    //             address TEXT,
+    //             address1 TEXT,
     //             address2 TEXT,
     //             state TEXT,
     //             city Text,
@@ -30,7 +30,7 @@ db.serialize(() => {
     //         INSERT INTO places (
     //             image,
     //             name,
-    //             address,
+    //             address1,
     //             address2,
     //             state,
     //             city,
@@ -69,8 +69,8 @@ db.serialize(() => {
     //     console.log(rows)
     // })
 
-    // // 4 Deletar os dados da tabela
-    // db.run(`DELETE FROM places WHERE id = ?`, [22], function (err) {
+    // // // 4 Deletar os dados da tabela
+    // db.run(`DELETE FROM places WHERE id = ?`, [27], function (err) {
     //     if (err) {
     //         return console.log(err)
     //     }
