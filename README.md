@@ -14,7 +14,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O Happy Dev é uma aplicação web que conecta pessoas que possuem eletrônicos para doar a devs iniciantes no ramo tecnológico afim de incentivá-los a seguir na área.
+O Happy Dev é uma aplicação web que conecta pessoas que possuem eletrônicos para doar à devs iniciantes no ramo tecnológico afim de incentivar seus estudos e ajudá-los a aprender com mais facilidade.
 
 # Instalações necessárias
 
