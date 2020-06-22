@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="HappyDev" title="#HappyDev" src="./public/assets/icons/programmer.svg" width="300px" />
+    <img alt="HappyDev" title="#HappyDev" src="./public/assets/icons/programmer.svg" width="150px" height="135px" />
 </h1>
 
 
