@@ -88,7 +88,7 @@ form select{
     font-size: 16px;
 
     border-radius: 8px;
-    outline-color: #34cb79;
+    outline-color: #13448d;
 }
 form select{
     -webkit-appearance: none;
@@ -119,7 +119,7 @@ form button{
     
 }
 form button:hover{
-    background-color: #2fb86e;
+    background-color: #13448d;
 }
 
 .items-grid {
@@ -157,7 +157,7 @@ form button:hover{
   
   .items-grid li.selected {
     background: #E1FAEC;
-    border: 2px solid #34CB79;
+    border: 2px solid #13448d;
   }
 
   .items-grid li img,

@@ -4,12 +4,13 @@
 
 {# Title #}
 {% block title %}
-    <title>Cria um ponto de coleta</title>
+    <title>Cria um ponto de doação</title>
 {% endblock title %}
 
 {# Styles #}
 {% block styles %}
     <link rel="stylesheet" type="text/css" href="./styles/create-point.css">
+    <link rel="stylesheet" type="text/css" href="./styles/modal.css">
 {% endblock styles %}
 
 {# Content #}
@@ -17,27 +18,27 @@
     <!-- Para não precisar modificar a mesma header em diversar páginas o nunjucks nos possibilita trabalhar com o include abaixo para modificar apenas em um arquivo e atualizar em todas as páginas que utilza o mesmo header -->
     {% include "partials/page-header.html" %}
 
-    <form action="">
+    <form action="/savepoint" method="POST">
         <h1>
-            Cadastro do ponto de coleta
+            Cadastro do ponto de doação
         </h1>
 
         <!-- Coleção de campos -->
         <fieldset>
             <legend>
-                <h2>Dados da entidade</h2>
+                <h2>Dados do doador</h2>
             </legend>
 
             <!-- Nome / imagem -->
             <div class="field-group">
                 <div class="field">
-                    <label for="name">Nome da entidade</label>
+                    <label for="name">Nome do doador</label>
                     <input type="text" name="name" required="required">
                 </div>
 
                 <div class="field">
-                    <label for="name">Imagem da entidade</label>
-                    <input type="url" name="image" required="required" placeholder="http://">
+                    <label for="name">Imagem das doações</label>
+                    <input type="url" name="image" required="required" placeholder="http://  img180x150">
                 </div>
             </div>
 
@@ -82,45 +83,45 @@
         <!--Itens de coleta-->
         <fieldset>
             <legend>
-                <h2>Itens de Coleta</h2>
+                <h2>Itens para doação</h2>
                 <span>Selecione um ou mais itens abaixo</span>
             </legend>
 
             <div class="items-grid">
-                <li data-id="1">
+                <li data-id="Monitor">
                     <!--data-id atributo especial do html-->
-                    <img src="assets/lampadas.svg" alt="Lâmpadas">
-                    <span>Lâmpadas</span>
+                    <img src="assets/icons/rocket.svg" alt="Monitor">
+                    <span>Monitor</span>
                 </li>
 
-                <li data-id="2">
+                <li data-id="Teclado">
                     <!--data-id atributo especial do html-->
-                    <img src="assets/baterias.svg" alt="Pilhas e Baterias">
-                    <span>Pilhas e Baterias</span>
+                    <img src="assets/icons/keyboard.svg" alt="Teclado">
+                    <span>Teclado</span>
                 </li>
 
-                <li data-id="3">
+                <li data-id="Fone de Ouvido">
                     <!--data-id atributo especial do html-->
-                    <img src="assets/papeis-papelao.svg" alt="Papeis e Papelão">
-                    <span>Papeis e Papelão</span>
+                    <img src="assets/icons/headphones.svg" alt="Fone de Ouvido">
+                    <span>Fone de Ouvido</span>
                 </li>
 
-                <li data-id="4">
+                <li data-id="Mouse">
                     <!--data-id atributo especial do html-->
-                    <img src="assets/eletronicos.svg" alt="Resíduos Eletrônicos">
-                    <span>Resíduos Eletrônicos</span>
+                    <img src="assets/icons/mouse.svg" alt="Mouse">
+                    <span>Mouse</span>
                 </li>
 
-                <li data-id="5">
+                <li data-id="Material Auxiliar">
                     <!--data-id atributo especial do html-->
-                    <img src="assets/organicos.svg" alt="Resíduos Orgânicos">
-                    <span>Resíduos Orgânicos</span>
+                    <img src="assets/icons/study.svg" alt="Material Auxiliar">
+                    <span>Material Auxiliar</span>
                 </li>
 
-                <li data-id="6">
+                <li data-id="Cabos de Conexão">
                     <!--data-id atributo especial do html-->
-                    <img src="assets/oleo.svg" alt="Óleo de Cozinha">
-                    <span>Óleo de Cozinha</span>
+                    <img src="assets/icons/usb-cable.svg" alt="Cabos de Conexão">
+                    <span>Cabos de Conexão</span>
                 </li>
             </div>
 
@@ -128,10 +129,17 @@
 
         </fieldset>
 
-        <button type="submit">Cadastrar ponto de coleta</button>
+        <button type="submit">Cadastrar ponto de doação</button>
 
     </form>
+
 {% endblock content %}
+
+{% block modal %}
+    {% if saved %}
+        {%include "partials/point-created.html"%}
+    {% endif %}
+{% endblock modal %}
 
 {# Scripts #}
 {% block scripts %}

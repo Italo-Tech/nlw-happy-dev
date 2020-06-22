@@ -1,8 +1,8 @@
 #page-home{
     height: 100vh;
 
-    background: url('../assets/home-background.svg') no-repeat;
-    background-position: 40vw 20vh;
+    background: url('../assets/icons/consulting.svg') no-repeat;
+    background-position: 45vw 20vh;
 }
 
 #page-home .content{
@@ -37,6 +37,7 @@
     background-image: url('../assets/log-in.svg');
     width: 20px;
     height: 20px;
+    color:#2e8be8;
 }
 
 #page-home main{
@@ -79,7 +80,7 @@
 }
 
 #page-home main a:hover{
-    background-color: #2fb86e;
+    background-color: #13448d;
 }
 
 #page-home main a span{
@@ -107,4 +108,17 @@
     flex: 1; /*Faz crescer em toda a caixa na horizontal*/
 
     text-align: center;
+}
+
+.logo{
+    display: flex;
+    align-items: flex-end;
+}
+
+.logo p{
+    font-size: 36px;
+    font-family: Ubuntu, sans-serif;
+    font-weight: bold;
+    margin-left: 10px;
+    color:#00175d;
 }
