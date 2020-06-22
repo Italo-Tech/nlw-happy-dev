@@ -37,7 +37,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O Happy Dev é uma aplicação web que conecta pessoas que possuem eletrônicos para doar à devs iniciantes no ramo tecnológico afim de incentivar seus estudos e ajudá-los a aprender com mais facilidade.
 
-# Instalações necessárias
+## Instalações necessárias
 
 * <a href="https://nodejs.org/en/download/">Node.js 12.18.0 LTS</a>
 
@@ -53,19 +53,19 @@ No terminal, dentro da pasta do projeto:
 - Deixei pré-definido que para iniciar o servidor é só digitar <b>npm start</b> no terminal.
 
 
-# APIs
+## APIs
 
 * <a href = "https://servicodados.ibge.gov.br/api/docs/localidades?versao=1#api-UFs-estadosGet"> IBGE </a>
 
 
-# Editor de Texto
+## Editor de Texto
 
 * <a href = "https://code.visualstudio.com/"> Visual Studio Code </a>
 
-# Imagens utilizadas
+## Imagens utilizadas
 
 * <a href = "https://unsplash.com/"> Unsplash </a>
 
-# Base e Layout 
+## Base e Layout 
 
 * Bootcamp - Next Level Week realizado pela  <a href = "https://rocketseat.com.br/" > Rocketseat. </a>
