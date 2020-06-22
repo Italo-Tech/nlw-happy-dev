@@ -1,7 +1,8 @@
 :root{
    --title-color: #002e74; /* Atalho de cor */
    --primary-color: #002e74;
-   --back-color: #f0f0f5;
+   --back-color: #f0f0f5; 
+
 }
 
 *{
@@ -15,7 +16,8 @@ html{
 }
 
 body{
-    background: #f0f0f5;
+    /* background: #f0f0f5; */
+    background: #fff;
     -webkit-font-smoothing: antialised;
 }
 
