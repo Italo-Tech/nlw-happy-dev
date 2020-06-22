@@ -2,8 +2,21 @@
     <img alt="HappyDev" title="#HappyDev" src="./public/assets/Github/logogithub.png" width="200px" height="80px" Happy Dev/>
 </h1>
 
+<h2 align="center">
+  🚀 Next Level Week
+</h2>
+<p align="center">
 
+<p align="center">
+  <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
 
+<p align="center">
+  <img alt="Home page" src="./public/assets/Github/img1.jfif" width="100%">
+  <img alt="" src="./public/assets/Github/img2.jfif" width="50%">
+  <img alt="" src="./public/assets/Github/img3.jfif" width="50%">
+</p>
 
 ## 👨🏼‍💻 Desenvolvedor 
 
