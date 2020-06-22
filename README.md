@@ -1,3 +1,10 @@
+<h1 align="center">
+    <img alt="HappyDev" title="#HappyDev" src=".github/img1.svg" width="300px" />
+</h1>
+
+
+
+
 ## 👨🏼‍💻 Desenvolvedor 
 
 - [Ítalo Henrique](https://www.linkedin.com/in/italo-tech/)
